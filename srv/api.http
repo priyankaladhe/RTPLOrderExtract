@@ -1,0 +1,39 @@
+GET http://localhost:4004/odata/v4/orderextract/Orderdata
+
+###Request
+POST http://localhost:4004/odata/v4/orderextract/submitOrderData
+Content-Type: application/json
+
+{
+    "Orderdata" : [{
+    "Plant": "1001",
+    "MCNo": "CNC30",
+    "OrderNo": "000000401180",
+    "OrderDate": "2024-12-01",
+    "Material": "RAA1093040P",
+    "MaterialDescription": "SWD 295 PB HUB SN 4",
+    "OperNo": "0010",
+    "OperDescription": "I SIDE",
+    "DrawingNo": "R/LSW-1093",
+    "RevNo": "5",
+    "SrNo": "SN 04",
+    "PlanQty": "1",
+    "SetupTimeUnit": "MIN",
+    "RoutingSetupTimeMin": "60",
+    "MachineTimeUnit": "MIN",
+    "MachineTimeMin": "22.5",
+    "NormsQty": "21",
+    "OrderText": "",
+    "ShiftPlan": "",
+    "OperatorName": "",
+    "OperatorCode": "",
+    "ManualSetupTimeMin": "60",
+    "UsedTimeMin": "",
+    "ProductionQty": "0",
+    "RejQtyMC": "0",
+    "RejQtyMAT": "0",
+    "DownTimeMin": "",
+    "DownTimeCode": "",
+    "Remarks": ""
+}]
+}

@@ -1,0 +1,191 @@
+<mvc:View controllerName="orderdataextract.controller.FileUploadData" 
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:m="sap.m"
+	 xmlns="sap.ui.table"
+    	xmlns:f="sap.ui.layout.form">
+    <m:Page id="page" title="{i18n>title}" class = "sapUiSmallMarginBegin">
+        <m:VBox justifyContent="Start" alignItems="Stretch" width="100%">
+        <f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Order Data Extract"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="2"
+			columnsM="2"
+			singleContainerFullSize="false" >
+			<f:content>
+            <m:Label text="File Upload"/>
+				<u:FileUploader
+                id="fileUploader"
+                name="myFileUpload"
+                uploadUrl="upload/"
+                tooltip="Upload your file to the local server"
+                uploadComplete="handleUploadComplete"
+				change="handleFileChange"
+				fileType="csv,xlsx"/>  
+			</f:content>
+            
+		</f:SimpleForm>
+		<m:HBox>
+             <m:Button
+                text="Upload File"
+                press="handleUploadPress"
+                class="sapUiLargeMarginLeft"
+        />
+		<m:Button text="Submit Data" press="onSaveChanges" class="sapUiTinyMarginBegin"/>
+		</m:HBox>
+		
+        <m:ScrollContainer horizontal="true" vertical="false" width="100%" height="auto" focusable="true"
+                >
+		<Table id="dataTable" rows="{oModel>/OrderData}" selectionMode="Single" class = "sapUiSmallMarginRight">
+        <columns>
+        <Column width="11rem">
+            <label><m:Text text="Plant"/></label>
+            <template><m:Input value="{oModel>Plant}" liveChange="onDataChange"/></template>
+        </Column>
+        
+        <Column width="11rem">
+            <label><m:Text text="M/C No." /></label>
+            <template><m:Input value="{oModel>MC No}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Order No." /></label>
+            <template><m:Input value="{oModel>Order No.}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Order Date" /></label>
+            <template><m:DatePicker value="{oModel>Order Date}" displayFormat="MM-dd-yyyy" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Material" /></label>
+            <template><m:Input value="{oModel>Material}" liveChange="onDataChange"/></template>
+        </Column>
+    </columns>
+
+    <Column width="11rem">
+            <label><m:Text text="Material Description" /></label>
+            <template><m:Input value="{oModel>Material Description}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Oper. No." /></label>
+            <template><m:Input value="{oModel>Oper. No.}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Oper Description" /></label>
+            <template><m:Input value="{oModel>Oper Description}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Drawing No." /></label>
+            <template><m:Input value="{oModel>Drawing No.}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Rev.No." /></label>
+            <template><m:Input value="{oModel>Rev.No.}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Sr.No." /></label>
+            <template><m:Input value="{oModel>Sr.No.}" liveChange="onDataChange"/></template>
+        </Column>
+
+         <Column width="11rem">
+            <label><m:Text text="Plan Qty." /></label>
+            <template><m:Input value="{oModel>Plan Qty.}" liveChange="onDataChange"/></template>
+        </Column>
+
+         <Column width="11rem">
+            <label><m:Text text="Setup Time Unit" /></label>
+            <template><m:Input value="{oModel>Setup Time Unit}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Routing Setup Time (Min)" /></label>
+            <template><m:Input value="{oModel>Routing Setup Time (Min)}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Machine Time Unit" /></label>
+            <template><m:Input value="{oModel>Machine Time Unit}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Machine Time(Min)" /></label>
+            <template><m:Input value="{oModel>Machine Time(Min)}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Norms Qty." /></label>
+            <template><m:Input value="{oModel>Norms Qty.}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Order Text" /></label>
+            <template><m:Input value="{oModel>Order Text}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Shift Plan(I/II/III)" /></label>
+            <template><m:Input value="{oModel>Shift Plan(I/II/III)}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Operator Name" /></label>
+            <template><m:Input value="{oModel>Operator Name}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Operator Code" /></label>
+            <template><m:Input value="{oModel>Operator Code}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Manual Setup Time (Min)" /></label>
+            <template><m:Input value="{oModel>Manual Setup Time (Min)}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Used Time (Min)" /></label>
+            <template><m:Input value="{oModel>Used Time (Min)}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Production Qty." /></label>
+            <template><m:Input value="{oModel>Production Qty.}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Rej. QTy - M/C" /></label>
+            <template><m:Input value="{oModel>Rej. QTy - M/C}" liveChange="onDataChange"/></template>
+        </Column>
+
+        <Column width="11rem">
+            <label><m:Text text="Rej. Qty - MAT" /></label>
+            <template><m:Input value="{oModel>Rej. Qty - MAT}" liveChange="onDataChange"/></template>
+        </Column>
+
+
+    
+            </Table>
+            </m:ScrollContainer>
+			
+        </m:VBox>
+    </m:Page>
+</mvc:View>
