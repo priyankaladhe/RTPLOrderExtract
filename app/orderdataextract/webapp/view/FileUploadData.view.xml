@@ -52,133 +52,133 @@
         <columns>
         <Column width="11rem">
             <label><m:Text text="Plant"/></label>
-            <template><m:Input value="{oModel>Plant}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Plant}" /></template>
         </Column>
         
         <Column width="11rem">
             <label><m:Text text="M/C No." /></label>
-            <template><m:Input value="{oModel>MC No}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>MC No}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Order No." /></label>
-            <template><m:Input value="{oModel>Order No.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Order No.}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Order Date" /></label>
-            <template><m:DatePicker value="{oModel>Order Date}" displayFormat="MM-dd-yyyy" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Order Date}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Material" /></label>
-            <template><m:Input value="{oModel>Material}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Material}" /></template>
         </Column>
     </columns>
 
     <Column width="11rem">
             <label><m:Text text="Material Description" /></label>
-            <template><m:Input value="{oModel>Material Description}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Material Description}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Oper. No." /></label>
-            <template><m:Input value="{oModel>Oper. No.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Oper. No.}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Oper Description" /></label>
-            <template><m:Input value="{oModel>Oper Description}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Oper Description}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Drawing No." /></label>
-            <template><m:Input value="{oModel>Drawing No.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Drawing No.}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Rev.No." /></label>
-            <template><m:Input value="{oModel>Rev.No.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Rev.No.}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Sr.No." /></label>
-            <template><m:Input value="{oModel>Sr.No.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Sr.No.}" /></template>
         </Column>
 
          <Column width="11rem">
             <label><m:Text text="Plan Qty." /></label>
-            <template><m:Input value="{oModel>Plan Qty.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Plan Qty.}" /></template>
         </Column>
 
          <Column width="11rem">
             <label><m:Text text="Setup Time Unit" /></label>
-            <template><m:Input value="{oModel>Setup Time Unit}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Setup Time Unit}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Routing Setup Time (Min)" /></label>
-            <template><m:Input value="{oModel>Routing Setup Time (Min)}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Routing Setup Time (Min)}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Machine Time Unit" /></label>
-            <template><m:Input value="{oModel>Machine Time Unit}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Machine Time Unit}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Machine Time(Min)" /></label>
-            <template><m:Input value="{oModel>Machine Time(Min)}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Machine Time(Min)}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Norms Qty." /></label>
-            <template><m:Input value="{oModel>Norms Qty.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Norms Qty.}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Order Text" /></label>
-            <template><m:Input value="{oModel>Order Text}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Order Text}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Shift Plan(I/II/III)" /></label>
-            <template><m:Input value="{oModel>Shift Plan(I/II/III)}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Shift Plan(I/II/III)}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Operator Name" /></label>
-            <template><m:Input value="{oModel>Operator Name}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Operator Name}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Operator Code" /></label>
-            <template><m:Input value="{oModel>Operator Code}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Operator Code}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Manual Setup Time (Min)" /></label>
-            <template><m:Input value="{oModel>Manual Setup Time (Min)}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Manual Setup Time (Min)}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Used Time (Min)" /></label>
-            <template><m:Input value="{oModel>Used Time (Min)}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Used Time (Min)}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Production Qty." /></label>
-            <template><m:Input value="{oModel>Production Qty.}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Production Qty.}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Rej. QTy - M/C" /></label>
-            <template><m:Input value="{oModel>Rej. QTy - M/C}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Rej. QTy - M/C}" /></template>
         </Column>
 
         <Column width="11rem">
             <label><m:Text text="Rej. Qty - MAT" /></label>
-            <template><m:Input value="{oModel>Rej. Qty - MAT}" liveChange="onDataChange"/></template>
+            <template><m:Text text="{oModel>Rej. Qty - MAT}" /></template>
         </Column>
 
 

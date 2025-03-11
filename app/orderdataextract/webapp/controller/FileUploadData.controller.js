@@ -95,14 +95,14 @@ sap.ui.define([
                 var columnKeys = Object.keys(jsonData[0]); // Extract column names
                 var oTable = this.getView().byId("dataTable");
 
-                columnKeys.forEach(column => {
-                    let oColumn = new sap.ui.table.Column({
-                        label: new sap.m.Text({ text: column }),
-                        template: new sap.m.Input({ value: `{oModel>${column}}`, liveChange: "onDataChange" }),
-                        width: "11rem"
-                    });
-                    oTable.addColumn(oColumn);
-                });
+                // columnKeys.forEach(column => {
+                //     let oColumn = new sap.ui.table.Column({
+                //         label: new sap.m.Text({ text: column }),
+                //         template: new sap.m.Input({ value: `{oModel>${column}}`, liveChange: "onDataChange" }),
+                //         width: "11rem"
+                //     });
+                //     oTable.addColumn(oColumn);
+                // });
 
                 // Get the existing model
                 var oModel = this.getView().getModel("oModel");
